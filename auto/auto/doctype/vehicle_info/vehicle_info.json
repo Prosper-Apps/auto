@@ -1,0 +1,219 @@
+{
+ "allow_import": 1,
+ "autoname": "field:vin",
+ "creation": "2020-12-26 02:03:00.759962",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "vin",
+  "customer",
+  "vin_fields_section",
+  "model_year",
+  "make",
+  "model",
+  "transmission_style",
+  "column_break_9",
+  "drive_type",
+  "trim",
+  "engine_model",
+  "engine_displacement",
+  "auto_fields_section",
+  "mileage",
+  "tyre_size",
+  "column_break_17",
+  "licence_plate",
+  "color",
+  "title"
+ ],
+ "fields": [
+  {
+   "fieldname": "vin",
+   "fieldtype": "Data",
+   "label": "vin",
+   "unique": 1
+  },
+  {
+   "fieldname": "model_year",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Model Year",
+   "options": "Model Year"
+  },
+  {
+   "fieldname": "make",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Make",
+   "options": "Make"
+  },
+  {
+   "fieldname": "model",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Model",
+   "options": "Model"
+  },
+  {
+   "fieldname": "color",
+   "fieldtype": "Data",
+   "label": "Color",
+   "options": "Color"
+  },
+  {
+   "fieldname": "engine_displacement",
+   "fieldtype": "Data",
+   "label": "Engine Displacement (ccm)",
+   "options": "Displacement (CC)"
+  },
+  {
+   "fieldname": "engine_model",
+   "fieldtype": "Data",
+   "label": "Engine Model",
+   "options": "Engine Model"
+  },
+  {
+   "fieldname": "mileage",
+   "fieldtype": "Int",
+   "label": "Mileage (KM)"
+  },
+  {
+   "fieldname": "title",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Title"
+  },
+  {
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Customer",
+   "options": "Customer"
+  },
+  {
+   "fieldname": "trim",
+   "fieldtype": "Data",
+   "label": "Trim",
+   "options": "Trim"
+  },
+  {
+   "fieldname": "transmission_style",
+   "fieldtype": "Data",
+   "label": "Transmission Style",
+   "options": "Transmission Style"
+  },
+  {
+   "fieldname": "drive_type",
+   "fieldtype": "Data",
+   "label": "Drive Type",
+   "options": "Drive Type"
+  },
+  {
+   "fieldname": "vin_fields_section",
+   "fieldtype": "Section Break",
+   "label": "VIN Fields"
+  },
+  {
+   "fieldname": "auto_fields_section",
+   "fieldtype": "Section Break",
+   "label": "Auto Fields"
+  },
+  {
+   "fieldname": "column_break_9",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_17",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "tyre_size",
+   "fieldtype": "Data",
+   "label": "Tyre Size"
+  },
+  {
+   "fieldname": "licence_plate",
+   "fieldtype": "Data",
+   "in_standard_filter": 1,
+   "label": "Licence Plate"
+  }
+ ],
+ "modified": "2021-01-07 08:49:05.982842",
+ "modified_by": "Administrator",
+ "module": "Auto",
+ "name": "Vehicle Info",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Item Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Sales User",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Sales Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Sales Master Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "search_fields": "customer,model_year,make, model, licence_plate",
+ "show_name_in_global_search": 1,
+ "show_preview_popup": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "title_field": "vin",
+ "track_changes": 1
+}
